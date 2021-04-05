@@ -6,7 +6,7 @@ from rest_framework import routers
 
 
 urlpatterns = [
-    path('registration/', views.Teste.as_view(), name='teste'),
     path('login/', obtain_auth_token, name='get_token'),
-
+    path('register/', views.RegisterView.as_view(), name='register'),
+    path('depositar/', views.DepositoView.as_view(), name='deposito'),
 ]
